@@ -1,10 +1,11 @@
-import cart from './assets/cart-shopping-solid.svg'
+import './cart-widget.css';
+import cart from './assets/cart-shopping-solid.svg';
 
 const CartWidget = () => {
     return (
-        <div>
+        <div className= 'Cart-Widget'>
             <img src= {cart} alt="cart-widget" width="15px" />
-            3
+            <p className= 'NumberExample'>3</p>
         </div>
     )
 }

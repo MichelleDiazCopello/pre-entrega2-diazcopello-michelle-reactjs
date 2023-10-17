@@ -1,0 +1,6 @@
+.ListGroup {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    /* width: 25%; */
+}

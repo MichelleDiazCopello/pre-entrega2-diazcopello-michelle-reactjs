@@ -1,3 +1,4 @@
+import './item-list-container.css'
 import { useEffect, useState } from "react";
 import { getProducts, getProductByCategory } from '../../asyncProducts';
 import ItemList from '../item-list/item-list';
@@ -21,8 +22,8 @@ const ItemListContainer = ( { greeting } ) => {
     }, [categoryID] )
 
     return (
-        <div>
-            <h1>{greeting}</h1>
+        <div className= "ProductsCard">
+            <h1 className= 'CardTitle'>{greeting}</h1>
             <ItemList products = {products}/>
         </div>
     )

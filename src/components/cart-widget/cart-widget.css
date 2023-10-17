@@ -1,0 +1,9 @@
+.Cart-Widget {
+    display: flex;
+    width: 3em;
+    justify-content: space-around;
+}
+
+.NumberExample {
+    display: flex;
+}

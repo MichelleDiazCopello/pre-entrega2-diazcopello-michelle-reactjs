@@ -1,0 +1,26 @@
+.CardItem {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    border-style: groove;
+    width: 25%;
+}
+
+.ItemImg {
+    border-style: groove;
+    width: 200px;
+    height: 200px;
+}
+
+.InfoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ProductInformation {
+    display: flex;
+    /* font-weight: 900; */
+}
