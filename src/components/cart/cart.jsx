@@ -28,5 +28,4 @@ const Cart = () => {
 
 export default Cart;
 
-// ver / crear el archivo cartItem.
-// agregar cart a App
+// ver / crear el archivo cartItem. 
