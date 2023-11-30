@@ -1,13 +1,23 @@
 import './item-detail.css';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import ItemCount from '../item-count/item-count';
 import { Link } from 'react-router-dom';
+import { CartContext } from '../../context/cartContext';
 
 const ItemDetails = ( {id, name, price, category, description, img, stock} ) => {
     const [ quantityAdded, setquantityAdded ] = useState ( 0 );
 
+    const { addItem } = useContext ( CartContext );
+
     const handleOnAdd = ( quantity ) => {
         setquantityAdded ( quantity );
+
+        const item = {
+            id, name, price
+        };
+
+        addItem ( item, quantity );
+
     };
     
     return (
@@ -30,10 +40,10 @@ const ItemDetails = ( {id, name, price, category, description, img, stock} ) => 
                     ) : (
                         <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
                     )
-                }
+                };
             </footer>
         </article>
-    )
-}
+    );
+};
 
-export default ItemDetails
+export default ItemDetails;
